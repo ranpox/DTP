@@ -11,6 +11,6 @@ Memory，LSTM）这种神经元，它是一种循环神经网络的特殊类型�
 只有深度学习技术还不够，我们还要结合统计机器学习模型CRF，可以将神经网络结构作为特征抽取器，CRF作为外层解码结构，来利用CRF对序列建模的能力，最终Bi-LSTM-CRF模型结构如下图所示：
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/theory-1.png
-   :alt: theory-1
+   :alt: 图 1
 
-   theory-1
+   图 1
