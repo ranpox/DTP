@@ -1,16 +1,10 @@
-.. _header-n0:
-
 开始使用DTP
 ===========
-
-.. _header-n2:
 
 基本
 ----
 
 DTP给开发者提供了语义理解模块和对话管理模块的算法黑箱，开发者不需要了解构建对话系统的复杂模型，只要上传一定量的语料和定义系统所需要的各种特定参数和规则，就可以创建出一个用来完成特定意图功能的任务型对话系统。通过借助DTP提供的云服务，开发者无需亲自掌握NLP、AI等技术，只要基于DTP的会话API即可在多种终端（网站、移动APP、智能硬件）中构建自己的智能会话机器人界面。
-
-.. _header-n5:
 
 创建第一个机器人
 ----------------
@@ -20,31 +14,43 @@ DTP给开发者提供了语义理解模块和对话管理模块的算法黑箱�
 首先我们创建一个出行机器人，用途是帮助用户查询机票：
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/begin-1.png
-   :alt: 
+   :alt: begin-1
+
+   begin-1
 
 创建完机器人之后，系统会为机器人添加两个默认的实体，city和date，city表示地点，date表示时间。在本例中，我们会利用到两个语义槽“出发地”和“到达地”，为了创建这两个语义槽，我们需要创建两个对应的实体，从词法上来看，出发地和到达地所包含的词汇信息都相同，但语义信息不同，因此，我们会在city下创建两个子实体，“geo_city_from”和“geo_city_to”：
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/begin-2.png
-   :alt: 
+   :alt: begin-2
+
+   begin-2
 
 然后我们在“出行机器人”中我们创建一个“订机票”的意图：
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/begin-3.png
-   :alt: 
+   :alt: begin-3
+
+   begin-3
 
 之后我们创建“出发地”和“到达地”两个语义槽，两个语义槽的类型分别对应刚才创建的两个实体，并且设定两个语义槽都不可缺失，这代表着只有在“出发地”和“到达地”都被机器人识别出时，本段对话才算结束，同时，当其中的某一个槽缺失时，机器人会发出询问，具体采用何种方式询问，开发者可以自行定义：
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/begin-4.png
-   :alt: 
+   :alt: begin-4
+
+   begin-4
 
 接下来我们需要添加查机票场景下的各种对话样本，也就是语料，同时将其中的语义槽标注出来。开发者可以在点击语料对话框后，通过鼠标拖拽选中指定词汇进行标注，标注结果中的不同颜色代表不同语义槽：
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/begin-5.png
-   :alt: 
+   :alt: begin-5
+
+   begin-5
 
 最后，我们点击训练按钮，待训练任务完成后，即可在右侧的栏目中进行对话测试。
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/imgs/begin-6.png
-   :alt: 
+   :alt: begin-6
+
+   begin-6
 
 机器人训练完成后，开发者便可通过API来调用对话系统，API会返回机器人回复及当前语义槽的抽取结果。开发者在获得这些信息后，便可结合自己的系统开发更为丰富的功能。比如一款出行APP想开发一套智能客服，在配置完对话API后，便可将语义槽信息送入搜索系统中，从而向用户返回具体的航班信息。
