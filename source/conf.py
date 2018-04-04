@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = u'DTP'
-copyright = u'2018, RANPOX'
-author = u'RANPOX'
+copyright = u'2018, DTP'
+author = u'DTP'
 
 # The short X.Y version
 version = u''
@@ -101,7 +101,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'DTPdoc'
+htmlhelp_basename = 'DTP'
 
 
 # -- Options for LaTeX output ------------------------------------------------

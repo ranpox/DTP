@@ -3,16 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to DTP's documentation!
+.. include:: intro.rst
+
+.. include:: news.rst
+
+
+
+目录
 ===============================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-   hello
+   begin
+   overview
+   api
+   stack
+   theory
 
-Indices and tables
+索引及表格
 ==================
 
 * :ref:`genindex`
