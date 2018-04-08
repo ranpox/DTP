@@ -129,7 +129,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'DTP.tex', u'DTP Documentation',
-     u'RANPOX', 'manual'),
+     u'DTP', 'manual'),
 ]
 
 
