@@ -5,8 +5,6 @@
 
 .. include:: intro.rst
 
-.. include:: news.rst
-
 
 
 目录
@@ -17,10 +15,8 @@
    :caption: Contents:
 
    begin
-   overview
    api
    stack
-   theory
 
 索引及表格
 ==================
