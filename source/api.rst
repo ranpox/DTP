@@ -62,7 +62,6 @@ Response Parameters：
 
     Response Parameters:
 
-
     {
         "state": {
             "slots": [ ], 
