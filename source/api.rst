@@ -1,7 +1,7 @@
 API接口
 =======
 
-URL：http://api.dtp-cloud.cn/query
+URL：\http://api.dtp-cloud.cn/query
 
 Method：POST
 
@@ -33,20 +33,20 @@ Response Parameters：
 +---------------+--------+-----------------------------+
 | state         | Object | 对话状态信息，多轮NLU的结果 |
 +---------------+--------+-----------------------------+
-| - intent_name | String | 意图                        |
+| \- intent_name| String | 意图                        |
 +---------------+--------+-----------------------------+
-| - slots       | Array  | 语义槽列表                  |
+| \- slots      | Array  | 语义槽列表                  |
 +---------------+--------+-----------------------------+
-| – name        | String | 语义槽的名称                |
+| \-- name      | String | 语义槽的名称                |
 +---------------+--------+-----------------------------+
-| – value       | String | 语义槽的值                  |
+| \-- value     | String | 语义槽的值                  |
 +---------------+--------+-----------------------------+
 
 请求样例：
 
 ::
 
-    POST http://api.dtp-cloud.cn/query 
+    POST http://api.dtp-cloud.cn/query
 
 Headers:
 
@@ -59,9 +59,9 @@ POST body:
 .. code:: json
 
     {
-      "token":"5a6f201565e58b0989db13fc",
-      "query":"你好啊，帮我查下今天的天气吧",
-     "session_id": "12345"
+        "token": "5a6f201565e58b0989db13fc", 
+        "query": "你好啊，帮我查下今天的天气吧", 
+        "session_id": "12345"
     }
 
 Response Parameters:
@@ -69,11 +69,10 @@ Response Parameters:
 .. code:: json
 
     {
-        "state":{
-           "slots": [], 
-           "intent_name": "查天气"
+        "state": {
+            "slots": [ ], 
+            "intent_name": "查天气"
         }, 
-       "action": "请问您要查询哪里的天气呢？", 
-        "query":"你好啊，帮我查下今天的天气吧"
+        "action": "请问您要查询哪里的天气呢？", 
+        "query": "你好啊，帮我查下今天的天气吧"
     }
-
