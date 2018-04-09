@@ -48,15 +48,11 @@ Response Parameters：
 
     POST http://api.dtp-cloud.cn/query
 
-Headers:
-
-::
+    Headers:
 
     Content-Type: application/json
 
-POST body:
-
-.. code:: json
+    POST body:
 
     {
         "token": "5a6f201565e58b0989db13fc", 
@@ -64,9 +60,8 @@ POST body:
         "session_id": "12345"
     }
 
-Response Parameters:
+    Response Parameters:
 
-.. code:: json
 
     {
         "state": {
