@@ -5,6 +5,10 @@
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/images/stack/stack-01.png
    :alt: 图 1 任务型对话系统的组成部分
+   :height: 483 px
+   :width: 696 px
+   :scale: 70 %
+   :align: center
 
    图 1 任务型对话系统的组成部分
 
@@ -14,6 +18,10 @@
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/images/stack/stack-02.png
    :alt: 图 2 整体架构
+   :height: 460 px
+   :width: 567 px
+   :scale: 70 %
+   :align: center
 
    图 2 整体架构
 
