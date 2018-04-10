@@ -132,14 +132,22 @@ DTP给开发者提供了语义理解模块和对话管理模块的算法黑箱�
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/images/begin/begin-14.png
    :alt: 图 14
+   :height: 724 px
+   :width: 330 px
+   :scale: 95 %
    :align: center
 
    图 14
 
 .. figure:: https://dtp.oss-cn-beijing.aliyuncs.com/images/begin/begin-15.png
    :alt: 图 15
+   :height: 854 px
+   :width: 660 px
+   :scale: 50 %
    :align: center
 
    图 15
 
 机器人训练完成后，开发者便可通过API来调用对话系统，API会返回机器人回复及当前语义槽的抽取结果。开发者在获得这些信息后，便可结合自己的系统开发更为丰富的功能。
+
+.. hint:: 按照上述方式构建出的机器人只是一个简单的例子，无法准确识别所有的句式，如遇到用户表达无法识别的情况，尝试将语料加入并重新训练机器人。
